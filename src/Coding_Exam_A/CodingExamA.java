@@ -32,6 +32,8 @@ public class CodingExamA {
 		for (int i =0;i<robotct;i++) {
 			robots[i]=new Robot(400+400*i,700);
 		}
+		int angle = (sidect-2)*180/sidect;
+		Thread[] t = new Thread[robotct];
 		
 
 	}
