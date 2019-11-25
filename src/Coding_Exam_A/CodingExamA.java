@@ -21,6 +21,18 @@ public class CodingExamA {
 		 * 
 		 * See the Coding_Exam_A_Demo.jar for an example of what the finished product should look like.
 		 */
+		int robotct = Integer.parseInt(JOptionPane.showInputDialog("Enter Robot Count"));
+		String s = JOptionPane.showInputDialog("Enter Valid RGB, seperated by a single space");
+		int r = Integer.parseInt(s.substring(0, s.indexOf(" ")));
+		int g = Integer.parseInt(s.substring(s.indexOf(" ")+1,s.lastIndexOf(" ")));
+		int b = Integer.parseInt(s.substring(s.lastIndexOf(" ")+1));
+		Color c = new Color(r,g,b);
+		int sidect = Integer.parseInt(JOptionPane.showInputDialog("Enter side Count"));
+		Robot[] robots = new Robot[robotct];
+		for (int i =0;i<robotct;i++) {
+			robots[i]=new Robot(400+400*i,700);
+		}
+		
 
 	}
 }
